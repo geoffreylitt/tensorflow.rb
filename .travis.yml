@@ -39,6 +39,9 @@ install:
   - git clone --recurse-submodules https://github.com/tensorflow/tensorflow
   - cd tensorflow
   ### https://www.tensorflow.org/versions/r0.9/get_started/os_setup.html#configure-the-installation
+  - echo $PYTHON_BIN_PATH
+  - export PYTHON_BIN_PATH=/usr/lib/python2.7
+  - echo $PYTHON_BIN_PATH
   - printf '/usr/lib/python2.7\n\n\n' | ./configure
   - sudo bazel build //tensorflow:libtensorflow.so
   - sudo cp bazel-bin/tensorflow/libtensorflow.so /usr/lib
