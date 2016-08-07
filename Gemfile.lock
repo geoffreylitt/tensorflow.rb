@@ -7,6 +7,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.2.0)
+    byebug (9.0.5)
     coderay (1.1.1)
     diff-lcs (1.2.5)
     google-protoc (3.0.0.alpha.6.0.0)
@@ -50,6 +51,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.8, >= 1.8.4)
+  byebug
   google-protoc
   narray
   pry
@@ -58,3 +60,6 @@ DEPENDENCIES
   rubocop
   tensorflow!
   yard
+
+BUNDLED WITH
+   1.12.5
